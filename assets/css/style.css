@@ -556,7 +556,7 @@ h3{ font-size: clamp(1.25rem, 2vw, 1.55rem); }
 /* ---------- Travel / Cancellation ---------- */
 #practical{ background: var(--cream); }
 .practical-grid{
-  display:grid; grid-template-columns: 1fr 1fr; gap: var(--gap);
+  display:grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.25rem, 2.5vw, 2rem);
 }
 .practical-grid .box{
   background: var(--white); padding: 2rem 2.2rem; border-radius:10px;
@@ -564,7 +564,8 @@ h3{ font-size: clamp(1.25rem, 2vw, 1.55rem); }
 }
 .practical-grid h3{ color: var(--wine-deep); }
 .practical-grid p{ font-size: 0.94rem; margin-bottom: 0.6rem; }
-@media (max-width: 780px){ .practical-grid{ grid-template-columns: 1fr; } }
+@media (max-width: 980px){ .practical-grid{ grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px){ .practical-grid{ grid-template-columns: 1fr; } }
 
 /* ---------- Final CTA ---------- */
 #book{
