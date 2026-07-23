@@ -307,10 +307,8 @@ h3{ font-size: clamp(1.25rem, 2vw, 1.55rem); }
   color: var(--cream-alt);
   position: relative;
 }
-#ceremony::before{
-  content:"";
+.ceremony-bg{
   position:absolute; inset:0;
-  background-image: var(--fire-bg);
   background-size: cover; background-position: center;
   opacity: 0.16;
 }
