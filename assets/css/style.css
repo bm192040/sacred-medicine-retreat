@@ -611,3 +611,6 @@ footer .fnote{ letter-spacing:0.04em; }
   #hero .content{ padding-top: 6.5rem; padding-bottom: 2rem; }
   .scroll-cue{ display:none; }
 }
+@media (max-height: 760px){
+  .scroll-cue{ display:none; }
+}
